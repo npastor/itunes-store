@@ -1,0 +1,31 @@
+@import "~sass/variables";
+
+.imgClass {
+    width: auto; 
+    max-width: 100em; 
+    max-height: $height-s;
+}
+.btn {
+	background-color: black;
+	border-color: black;
+	width: 8em;
+    border-top-left-radius: $padding-s;
+    border-bottom-right-radius: $padding-s;
+    border-bottom-left-radius: $padding-s;
+    border-top-right-radius: $padding-s;
+}
+.btnDiv{
+	padding-top: .5em;
+}
+.sectionPadding {
+	padding : $padding-s;
+	height : auto;
+}
+.albumSection {
+	height: 30em; 
+	overflow: auto;
+}
+
+.carouselClass {
+	max-height: 50em;
+}

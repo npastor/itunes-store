@@ -1,0 +1,66 @@
+@import "~sass/variables";
+
+.albumsSection {
+  list-style-type : none;
+  padding: 3em;
+  text-align: center;
+  padding-top : 1em;
+  padding-left : 3em;
+  margin-right : 0em;
+}
+
+.liItem {
+    border: 1px solid #fbf2f2cc;
+    border-style: outset;
+    margin : 1em;
+}
+.sort{
+  color: blue;
+  padding-left : 3em;
+}
+.pointer{
+  cursor: $cursor-pointer;
+}
+
+.image{
+  height: auto; 
+  width: auto; 
+  max-width: 85em; 
+  max-height: 20em;
+  padding : 2em;
+  padding-bottom: 0;
+}
+
+.formInput{
+  max-width: 100em;
+  padding-top : $padding-s;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 0;
+}
+
+.albumsSection li {
+  position: relative;
+  cursor: $cursor-pointer;
+  background-color: $background-color;
+  padding: $padding-s;
+  
+}
+
+.albumsSection li:hover {
+  color: $list-color;
+  background-color: #DDD;
+ 
+}
+
+.albumsSection a {
+  color: #888;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  
+}
+
+.albumsSection a:hover {
+  color:$list-color;
+}

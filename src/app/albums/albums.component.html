@@ -1,0 +1,18 @@
+<div class="col-sm-12 ">
+	  <img class="d-block w-100 image " src={{music_URL}}>
+</div>
+	
+<div class = "formInput">
+	<input class="form-control" [(ngModel)]="searchText" placeholder="Search by album name.."/>
+</div>
+<div><span class ="sort pointer" (click)="sort('collectionName')">Sort By : Name</span></div>
+
+<ul class = "albumsSection row" >
+  <li *ngFor="let album of albums | filter : searchText | orderBy: {property: column, direction: direction}" class="col-sm-3">
+    <a routerLink="/detail/{{album.collectionId}}">
+      <div><b>{{album.collectionName}}</b></div>
+      <div>{{album.artistName}}</div>
+      <img src = {{album.artworkUrl100}}/>    
+    </a>
+  </li>
+</ul>
